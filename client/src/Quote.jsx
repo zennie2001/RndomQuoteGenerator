@@ -12,7 +12,7 @@ function Quote() {
 
         
     }
-   console.log(quote.length)
+   
     
 
   return (
