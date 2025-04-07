@@ -2,7 +2,10 @@ let express = require("express")
 let mongoose = require("mongoose")
 let cors = require("cors");
 const { signupModel } = require("./APP/Models/signup");
-  
+const quotes = require('./Quotes.json')
+
+console .log(quotes.length)
+
 
 let app = express();
 
@@ -29,6 +32,12 @@ app.post("/login" , (req, res)=>{
             res.json("no record existed")
         }
     })
+})
+
+app.get('/quote' , (req, res)=>{
+   
+    let randomQuoteIndex = (Math.random()*quotes.length) | 0 
+   res.send(quotes[randomQuoteIndex] )
 })
 
 mongoose.connect("mongodb://127.0.0.1:27017/QuoteGenerator").then(()=>{
