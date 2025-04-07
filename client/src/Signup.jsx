@@ -86,7 +86,7 @@ function Signup() {
          <p className='mb-3'>Already Have an Account?</p>
           <Link to="/login"
             type="submit"
-            className="block w-full bg-blue-100  py-2 rounded-xl hover:bg-blue-300 transition duration-300"
+            className="block text-center w-full bg-blue-100  py-2 rounded-xl hover:bg-blue-300 transition duration-300"
           >
             Login
           </Link>

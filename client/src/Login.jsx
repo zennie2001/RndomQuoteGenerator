@@ -27,7 +27,7 @@ function Login() {
       console.log(res.data)
 
       if(res.data === "success"){
-        navigate('/home')
+        navigate('/quote')
       }
 
       
