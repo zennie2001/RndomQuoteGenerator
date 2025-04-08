@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import { BsDashLg } from "react-icons/bs";
 import axios from 'axios';
+import { HiOutlineSpeakerWave } from "react-icons/hi2";
 
 function Quote() {
     const [quote, setQuote]= useState('')
@@ -38,7 +39,8 @@ function Quote() {
 
                     <div className='flex font-semibold justify-end items-center gap-1 mt-4 mb-2'><BsDashLg />{quote.author}</div>
                     <hr/>
-                    <div className='flex justify-end'>
+                    <div className='flex justify-between items-center'>
+                        <HiOutlineSpeakerWave className='size-8 mt-6' />
                         <button onClick={getQuote} className=' bg-violet-600 text-white px-2 py-1 rounded-lg mt-4 hover:bg-violet-700'>New Quote</button>
                     </div>
 
