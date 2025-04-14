@@ -1,8 +1,8 @@
 let express = require("express")
 let mongoose = require("mongoose")
 let cors = require("cors");
-const { signupModel } = require("./APP/Models/signup");
-const quotes = require('./Quotes.json')
+const { signupModel } = require("../APP/Models/signup");
+const quotes = require('../Quotes.json')
 const serverless = require("serverless-http");
 
 
