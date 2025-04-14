@@ -1,9 +1,9 @@
 let express = require("express")
 let mongoose = require("mongoose")
 let cors = require("cors");
-const { signupModel } = require("../APP/Models/signup");
-const quotes = require('../Quotes.json')
-const serverless = require("serverless-http");
+const { signupModel } = require("./APP/Models/signup");
+const quotes = require('./Quotes.json')
+
 
 
 console .log(quotes.length)
@@ -42,9 +42,15 @@ app.get('/quote' , (req, res)=>{
    res.send(quotes[randomQuoteIndex] )
 })
 
-mongoose.connect("mongodb://127.0.0.1:27017/QuoteGenerator").then(()=>{
+
+
+mongoose.connect("mongodb+srv://jennydev:mypass@cluster2.8ioe9pq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster2").then(()=>{
     console.log("connected to MongoDB")
+    app.listen(2000, () => {
+        console.log('Server is running on port 2000');
+      });
     
 }).catch(err => console.error("MongoDB connection error:", err));
 
-module.exports.handler = serverless(app);
+
+
