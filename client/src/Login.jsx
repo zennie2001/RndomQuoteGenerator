@@ -22,7 +22,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    axios.post('https://randomquotegenerator-flame.vercel.app/login', formData)
+    axios.post('https://quote-generator-backend-ashy.vercel.app/login', formData)
     .then((res)=>{
       console.log(res.data)
 
