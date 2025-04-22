@@ -7,7 +7,7 @@ import { HiOutlineSpeakerWave } from "react-icons/hi2";
 function Quote() {
     const [quote, setQuote]= useState('')
     const getQuote = ()=>{
-        axios.get("http://localhost:2000/quote").then((res)=>
+        axios.get("https://randomquotegenerator-flame.vercel.app/quote").then((res)=>
            setQuote(res.data)
         ).catch(err => console.log(err))
 
