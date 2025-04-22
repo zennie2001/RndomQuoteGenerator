@@ -3,8 +3,10 @@ let mongoose = require("mongoose")
 let cors = require("cors");
 const { signupModel } = require("./APP/Models/signup");
 const quotes = require('./Quotes.json')
+require('dotenv').config()
 
-
+let port = process.env.port || 2050
+let mongoDBURL = process.env.MONGODB_URL
 
 console .log(quotes.length)
 
@@ -44,10 +46,10 @@ app.get('/quote' , (req, res)=>{
 
 
 
-mongoose.connect("mongodb+srv://jennydev:mypass@cluster2.8ioe9pq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster2").then(()=>{
+mongoose.connect(mongoDBURL).then(()=>{
     console.log("connected to MongoDB")
-    app.listen(2000, () => {
-        console.log('Server is running on port 2000');
+    app.listen(port, () => {
+        console.log('Server is running ');
       });
     
 }).catch(err => console.error("MongoDB connection error:", err));
