@@ -10,7 +10,7 @@ function Quote() {
     const getQuote = ()=>{
         
         
-        axios.get("http://localhost:2000/quote").then((res)=>
+        axios.get("https://rndom-quote-backend.vercel.app/quote").then((res)=>
            setQuote(res.data)
         ).catch(err => console.log(err))
 

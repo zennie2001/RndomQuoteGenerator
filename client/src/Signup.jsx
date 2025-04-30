@@ -16,7 +16,7 @@ function Signup() {
   const handleSubmit = (e) =>{
     e.preventDefault();
 
-    axios.post('http://localhost:2000/register', formData).then((res)=>{
+    axios.post('https://rndom-quote-backend.vercel.app/register', formData).then((res)=>{
       console.log(res.data)
 
 

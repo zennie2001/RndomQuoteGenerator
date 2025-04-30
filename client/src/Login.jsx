@@ -24,7 +24,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    axios.post( 'http://localhost:2000/login', formData)
+    axios.post( 'https://rndom-quote-backend.vercel.app/login', formData)
     .then((res)=>{
       console.log(res.data)
 
