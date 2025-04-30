@@ -4,6 +4,8 @@ import axios from 'axios';
 
 function Signup() {
 
+ // const backendUrl = import.meta.env.BACKEND_URL
+
   const navigate = useNavigate()
   const [formData, setFormData] = useState({
     name: "",
@@ -14,7 +16,7 @@ function Signup() {
   const handleSubmit = (e) =>{
     e.preventDefault();
 
-    axios.post('https://randomquotegenerator-flame.vercel.app/register', formData).then((res)=>{
+    axios.post('http://localhost:2000/register', formData).then((res)=>{
       console.log(res.data)
 
 

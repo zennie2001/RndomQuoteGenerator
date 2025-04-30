@@ -9,6 +9,8 @@ function Login() {
     password: "",
   });
 
+ // const backendUrl = import.meta.env.BACKEND_URL
+
   let handleChange= (e)=>{
     let inputName = e.target.name
     let inputValue = e.target.value 
@@ -22,7 +24,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    axios.post('https://randomquotegenerator-flame.vercel.app/login', formData)
+    axios.post( 'http://localhost:2000/login', formData)
     .then((res)=>{
       console.log(res.data)
 
