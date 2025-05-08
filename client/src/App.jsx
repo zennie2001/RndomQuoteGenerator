@@ -5,8 +5,9 @@ import './App.css'
 import Signup from './Signup'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Login from './Login'
-import Home from './Home'
+
 import Quote from './Quote'
+import Home from './HOme'
 
 function App() {
   
@@ -14,10 +15,10 @@ function App() {
   return (
    <BrowserRouter>
    <Routes>
-    <Route path='/register' element={<Signup/>}></Route>
-    <Route path='/login' element={<Login/>}></Route>
-    <Route path='/' element={<Home/>}></Route>
-    <Route path='/quote' element={<Quote/>}></Route>
+    <Route path='/register' element={<Signup/>} />
+    <Route path='/login' element={<Login/>} />
+    <Route path='/' element={<Home/>} />
+    <Route path='/quote' element={<Quote/>} />
    </Routes> 
    </BrowserRouter>
   )

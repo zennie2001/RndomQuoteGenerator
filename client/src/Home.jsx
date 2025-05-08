@@ -21,7 +21,7 @@ function Home() {
     </div>
 
 
-    <h1 className='block text-center font-bold mx-36 text-7xl tracking-tight order-1 mt-44'>Quote Generator to create Quotes of the day  </h1>
+    <h1 className='block text-center font-bold mx-36 text-7xl tracking-tight order-1 mt-44'>Quote Generator to create Quotes of the day...  </h1>
 
     </div>
   )
