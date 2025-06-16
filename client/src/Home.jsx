@@ -9,7 +9,7 @@ function Home() {
         <h2 className='font-bold text-xl'>Quotes</h2>
       </div>
 
-      <div className='absolute right-10 mr-10 mt-2 flex items-center gap-x-8'>
+      <div className='absolute right-10 mr-10 mt-2 flex items-center gap-x-4'>
         <Link to="/login" className='bg-slate-300  py-2 px-4 rounded-xl hover:bg-slate-400 transition duration-250'>Login </Link>
         <Link  to="/register" className='bg-slate-900 text-white py-2 px-4 rounded-xl hover:bg-slate-800 transition duration-200'>Signup</Link>
       </div>
