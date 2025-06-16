@@ -1,5 +1,4 @@
-import React from 'react'
-import logo from './Images/QuoteLogo.png'
+
 import { Link } from 'react-router-dom'
 
 function Home() {
@@ -21,8 +20,14 @@ function Home() {
     </div>
 
 
-    <h1 className='block text-center font-bold mx-36 text-7xl tracking-tight order-1 mt-44'>Quote Generator to create Quotes of the day...  </h1>
+    <h1 className='block text-center font-bold mx-36 text-7xl tracking-tight order-1 mt-44'>Quote Generator </h1>
+    <p className='text-center mt-4 font-semibold'>Find the best quote for you...</p>
 
+    <div className='flex justify-center mt-24'>
+    <Link to="/quote" >
+    <button className=' bg-violet-600 text-white px-2 py-1 flex justify-center rounded-lg mt-4 hover:bg-violet-700'>Generate Quote</button>
+    </Link>
+    </div>
     </div>
   )
 }
