@@ -3,6 +3,7 @@ import './App.css'
 import Signup from './Signup'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Login from './Login'
+ import { ToastContainer } from 'react-toastify';
 
 //import Quote from './Quote'
 import Home from './Home'
@@ -13,7 +14,7 @@ function App() {
 
   return (
    <BrowserRouter>
-    
+    <ToastContainer/>
    <Routes>
     <Route path='/register' element={<Signup/>} />
     <Route path='/login' element={<Login/>} />

@@ -9,7 +9,7 @@ function Home() {
         <h2 className='font-bold text-xl'>Quotes</h2>
       </div>
 
-      <div className='absolute right-10 mr-10 flex items-center gap-x-8'>
+      <div className='absolute right-10 mr-10 mt-2 flex items-center gap-x-8'>
         <Link to="/login" className='bg-slate-300  py-2 px-4 rounded-xl hover:bg-slate-400 transition duration-250'>Login </Link>
         <Link  to="/register" className='bg-slate-900 text-white py-2 px-4 rounded-xl hover:bg-slate-800 transition duration-200'>Signup</Link>
       </div>
@@ -25,8 +25,9 @@ function Home() {
 
     <div className='flex justify-center mt-24'>
     <Link to="/quote" >
-    <button className=' bg-violet-600 text-white px-2 py-1 flex justify-center rounded-lg mt-4 hover:bg-violet-700'>Generate Quote</button>
+    <button className=' bg-violet-600 text-white px-2 py-1 flex justify-center rounded-l-lg  mt-4 hover:bg-violet-700'>Generate Quote</button>
     </Link>
+    <button className=' bg-violet-200  px-2 py-1 flex justify-center rounded-r-lg mt-4 hover:bg-violet-400'>Get Author </button>
     </div>
     </div>
   )
